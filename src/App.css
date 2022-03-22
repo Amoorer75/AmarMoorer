@@ -1,32 +1,361 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 62.5%;; */
+  color:#fff;
+  height: 100vh;
+}
+/* .App{
+  background-image: linear-gradient(45deg,rgb(21, 84, 179) 20%,#11a527 50%,#d3e41b);
+  background-size: 1000%;
+  animation: bg-animation 20s infinite alternate;
+} */
+body{
+  background-color: rgba(87, 87, 87, 0.899);
+} 
+/* @keyframes bg-animation {
+  0%{background-position: left;}
+  100%{background-position: right;}
+} */
+
 .App {
   text-align: center;
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.links label, #hamburger{
+  display:none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.links {
+  /* position: fixed; Stay in place
+  z-index: 1; Sit on top */
+  display: flex;
+  width: 100%;
+  background-image: linear-gradient(to right,rgb(45, 44, 44) 20%,#000406ec);
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title{
+  color: white;
+  margin-left:5%;
+  font-size: 18px;
+}
+
+
+
+nav {
+  padding-bottom: 0.5em;
+}
+button:active {
+  transform: scale(0.9);
+}
+.links nav a {
+  color: whitesmoke;
+  font-weight: 700;
+  border-bottom: 2px solid #0b0d0e9e;
+  text-decoration: none;
+  padding: 2em 2em 1.4em 2em;
+  transition: all 0.4s;
+}
+.links nav a:hover {
+  background: #282a2beb;
+  text-decoration: none;
+  border-bottom: 3px solid #ffffff;
+}
+.links nav .active {
+  background-color:  #282a2beb;
+  border-bottom-width: 3px;
+  border-bottom-color:#ffffff;
+}
+
+/* content on homepage */
+.container{
+  display:flex;
+  justify-content: center;
+   max-width: 100%;
+  
+   /* border: 1px solid red; */
+}
+.home{
+  
+  font-size: 18px;
+  /* border: 1px solid red; */
+  max-width: 80%;
+  margin-top: 5.5rem;
+  margin-bottom:20px;
+  /* margin-left: 15rem; */
+  padding: 15px;
+  display: flex;
+  background: rgba(0, 0, 0, 0.488);
+  border-radius: 10px;
+  border-style: outset;
+  align-items: center;
+  flex-direction: column;
+   
+    
+}
+
+
+.aboutMe{
+  /* border: 1px solid yellow; */
+  width: 60%;
+  margin-top: 10px;
+  /* margin-left: 22%; */
+  padding:6px;
+  text-align:left;
+  
+}
+
+ 
+/* projects on About js */
+.posts {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 10% auto 0 auto;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 90%;
+}
+
+.posts .item {
+  position: relative;
+  display: flex;
+  max-height: 14em;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  margin: 2em 2em;
+  width: 300px;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 4px;
+  background: #f8f8f8;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s;
+  flex-basis: 18em;
+  background-size: cover;
+  color: #f8f8f8;
+}
+.posts .item img {
+  height: 100%;
+  border-radius: 2px;
+}
+.modal {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  justify-content: flex-end;
   align-items: center;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.2) 10%,
+    rgba(0, 0, 0, 1)
+  );
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 0 0 4px 4px;
+}
+.modal button {
+  margin-bottom: 1em;
+  color: #fff
+}
+.posts .item:hover {
+  transform: scale(1.05);
+  border-color: #121313;
+}
+button {
+  padding: 0.6em 1.2em;
+  background-color: #2d2d2d;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+button:hover {
+  background: #1c1c1c;
+}
+/* single project */
+
+.post {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  margin: 1em auto;
+  background: rgba(0, 0, 0, 0.488);
+}
+.post img {
+  margin: auto;
+  max-height: 600px;
+  width: 100%;
+  opacity: 0.8;
+  border-radius: 4px 4px 0 0;
+}
+.posts .post img {
+  border-radius: 4px 4px 0 0;
+  width: 100%;
+  max-height: 600px;
+}
+.hero {
+  border-radius: 4px 4px 0 0;
+  height: 40%;
+  width: 100%;
+  flex: 1;
+}
+.content {
+  flex-basis: auto;
+}
+.content h3 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.7rem;
+}
+.content p {
+  width: 80%;
+  text-indent: 50px;
+  flex: 1;
+  margin: 1em auto;
+  line-height: 2.5;
+}
+.about .post h2 {
+  text-align: center;
+}
+.about .post img {
+  margin: auto;
+  max-height: 600px;
+  max-width: 400px;
+  margin-bottom: 3em;
+}
+li{
+  margin-top:10px;
+  padding:5px;
+  list-style-type: none;
+}
+.pic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  padding:20px;
 }
 
-.App-link {
-  color: #61dafb;
+.figpic img{
+  max-height: 19em;
+  width: 24em;
+  
 }
+.figpic1 img{
+  max-height: 19em;
+  width: 24em;
+} 
+.figpic2 img{
+    max-height: 20em;
+    /* width: 9em; */
+  
+}
+
+.projlink{
+  color:white;
+  padding:20px;
+  margin-bottom:10px;
+  border-radius: 20px;
+}
+.projlink:hover{
+  background-color:rgb(194, 194, 169);
+  color:rgb(94, 94, 94);
+}
+.projlink:active{
+  color:black;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 700px) {
+  .title{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .links{
+      display:inline-block;
+      width: 100%;
+      align-items:center;
+      padding:.5rem 1.5rem;
+      height: 100%;
+  }
+  #logo{
+    font-size:3em;
+  }
+
+  #hamburger{
+    height: 20px;
+  }
+
+  #hamitems{
+      display:flex;
+      flex-direction: column;
+      
+  }
+  #hamitems a{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+}
+
+
+.links nav {
+  padding:15px 32px;
+  border:none;
+  background-color:#06000b00;
+  font-size:16px;
+  height: 100%;
+}
+
+.links label {
+    display:inline-block;
+    color:white;
+    background:rgb(45, 44, 44);
+    font-style: normal;
+    font-size: 2em;
+    padding:10px;
+   
+}
+
+#hamitems{
+    display:none;
+}
+
+.links input:checked~#hamitems{
+      display:block;
+}
+
+.home{
+  font-size: 15px;
+}
+
+
+.figmapic {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+} 
 
 @keyframes App-logo-spin {
   from {

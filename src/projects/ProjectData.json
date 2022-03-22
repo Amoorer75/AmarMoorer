@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "PokeSeek",
+        "body": "PokéSeek is a Pokédex website that allows beginners and seasoned veterans to find more information on their favorite Pokémon that is not often provided in other Pokédex. It adds all the necessary information for any aspiring trainer under a sleek design and readable interface. The purpose of PokéSeek is to allow users to dive into more detailed looks on some of their favorite and newer Pokémon. The main goals of this prject was to provide useful information about any Pokémon and also allow easy navigation through the vast list of Pokémon. In this project I worked on the design of the site and gave a little assistance on the api call. ",
+        "section1":"Features:",
+        "feature1":"Randomized Pokémon on the homepage that can be re-randomized",
+        "feature2":"Search feature that allows user input of Pokémon name or id",
+        "feature3":"Pokémon listing (Using first 150 Pokémon as starting data)",
+        "feature4":"Pokémon selection from listing that displays further information",
+        "section2":"Mockups/Wireframes:",
+        "image": "https://user-images.githubusercontent.com/56780129/144083549-4f45b3d0-630c-4bac-a291-ad76b8de34eb.png",
+        "image2": "https://user-images.githubusercontent.com/56780129/144084155-727d2bc6-dea3-4fe6-b7ae-6f5b3b961d91.png",
+        "image3": "https://i.postimg.cc/fb9jrYBP/info-2022-03-06-at-5-13-42-PM.png",
+        "thumbnail": "https://i.postimg.cc/wT1MjCwJ/Listing-2022-03-06-at-4-57-40-PM.png",
+        "url": "https://pokeseek.netlify.app/home.html",
+        "urltitle": "PokeSeek site"
+
+    },
+    {
+        "id": 2,
+        "title": "HomeSeeker(in development)",
+        "body": "HomeSeeker is a provider of affordable housing choices for families and individuals who do not match the traditional criteria. Our main goal is to link potential tenants with housing opportunities using resources we've gathered from our own personal experience in the area, in order to provide vital information that will assist our community with access to better opportunities.",
+        "section1":"Features:",
+        "feature1":"The abilty to search for housing.",
+        "feature2":"Give recommending resorcess to those who want them based of income and status.",
+        "feature3":"Peoples reviews about the neighborhood can be viewed for the type osf area you are looking at.",
+        "image":"https://i.postimg.cc/YS995sB3/homeseeker-uml-2022-03-12-at-11-20-31-PM.png",
+        
+        "thumbnail": "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+    },
+    {
+        "id": 3,
+        "title": "Neon Pathways",
+        "body": "Neon Pathways is a puzzle,  color match game. The player makes sure the pawn goes into the respective path with the right colors. The more the player will increase in the levels, the more difficult the puzzles will be to solve.",
+        "section1":"Mechanics",
+        "feature1": "The player will be able to click on pawns with the mouse and move them with W,A,S, and D keys",
+        "feature2": "When 3 pawns of the same color are in the right path, the path gets closed",
+        "feature3": "Play in the dark",
+        "feature4": "Bomb avoiding",
+        "section2":"design mock-up with early play test ",
+        "image3": "https://i.postimg.cc/vBxg6Bfw/playtest2.jpg",
+        "image2": "https://i.postimg.cc/Y0LTN2VK/drawout.jpg",
+        "image": "https://i.postimg.cc/3JMNVth7/playtest1.jpg",
+        "thumbnail": "https://i.postimg.cc/rwSqKDw4/neon-home-screen-2022-03-06-at-7-40-04-PM.png"
+       
+    }
+    
+       
+        
+       
+        
+    
+   
+    
+]
